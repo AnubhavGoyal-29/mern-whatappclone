@@ -3,6 +3,8 @@ import SearchOutlined from '@material-ui/icons/SearchOutlined'
 import MoreVertIcon from "@material-ui/icons/MoreVert"
 import AttactFile from "@material-ui/icons/AttachFile"
 import React from 'react'
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
+import MicIcon from '@material-ui/icons/Mic'
 import "./chat.css"
 function chat() {
     return (
@@ -33,6 +35,30 @@ function chat() {
                     <span className="chat_timestamp">{new Date().toUTCString()}</span>
 
                 </p>
+                <p className="chat_message chat_reciever">
+                    <span className="chat_name">Prachi
+                    </span>
+                    love u kudo
+                    <span className="chat_timestamp">{new Date().toUTCString()}</span>
+
+                </p>
+            </div>
+            <div className="chat_footer">
+                <IconButton>
+                    <InsertEmoticonIcon/>
+                </IconButton>
+                <form>
+                    <input 
+                    placeholder="Type a message"
+                    type="text"></input>
+                    <button
+                    type="submit">
+                        Send message
+                    </button>
+                </form>
+                <IconButton>
+                    <MicIcon/>
+                </IconButton>
             </div>
 
         </div>
